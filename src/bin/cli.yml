@@ -1,0 +1,35 @@
+name: kvs
+author: CYKS<FranceDisco@outlook.com>
+args:
+  - version:
+      short: V
+      help: print version
+subcommands:
+  - set:
+      about: set a value in key/value database
+      version: "0.1.0"
+      author: CYKS<FranceDisco@outlook.com>
+      args:
+        - KEY:
+            required: true
+            index: 1
+        - VALUE:
+            required: true
+            index: 2
+  - get:
+      about: get a value by key in database
+      version: "0.1.0"
+      author: CYKS<FranceDisco@outlook.com>
+      args:
+        - KEY:
+            required: true
+            index: 1
+  - rm:
+      about: remove a key in database
+      version: "0.1.0"
+      author: CYKS<FranceDisco@outlook.com>
+      args:
+        - KEY:
+            required: true
+            index: 1
+
